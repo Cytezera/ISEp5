@@ -60,7 +60,7 @@ def view(grid):
 			print("wow unlucky tbh ") # Out of bounds.
 
 		else:
-			cell = grid[currentRow][currentCol]
+			cell = grid[row][col]
 			if cell == Maze.EMPTY:
 				cell = Maze.VISITED
 
