@@ -53,11 +53,11 @@ def view(grid):
 			currentCol -= 1
 
 		else:
-			print("MESSAGE 1") # Invalid direction.
+			print("GG go next buddy") # Invalid direction.
 
 		if (currentRow < 0 or currentCol < 0 or currentRow >= len(grid) or currentCol >= len(grid[currentRow])):
 			done = True
-			print("MESSAGE 2") # Out of bounds.
+			print("wow unlucky tbh ") # Out of bounds.
 
 		else:
 			if grid[currentRow][currentCol] == Maze.EMPTY:
@@ -65,12 +65,12 @@ def view(grid):
 
 			elif grid[currentRow][currentCol] == Maze.WALL:
 				done = True
-				print("MESSAGE 3") # Hit wall.
+				print("uninstall") # Hit wall.
 
 			elif grid[currentRow][currentCol] == Maze.END:
 				done = True
 				solved = True
-				print("MESSAGE 4") # Solved.
+				print("You somehow scaled :skull") # Solved.
 
 			else:
 				pass # Do nothing
