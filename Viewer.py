@@ -60,14 +60,14 @@ def view(grid):
 			print("wow unlucky tbh ") # Out of bounds.
 
 		else:
-			if grid[currentRow][currentCol] == Maze.EMPTY:
-				grid[currentRow][currentCol] = Maze.VISITED
+			if grid[row][col] == Maze.EMPTY:
+				grid[row][col] = Maze.VISITED
 
-			elif grid[currentRow][currentCol] == Maze.WALL:
+			elif grid[row][col] == Maze.WALL:
 				done = True
 				print("uninstall") # Hit wall.
 
-			elif grid[currentRow][currentCol] == Maze.END:
+			elif grid[row][col] == Maze.END:
 				done = True
 				solved = True
 				print("You somehow scaled :skull") # Solved.
